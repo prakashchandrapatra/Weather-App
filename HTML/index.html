@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div>
+          <form action class="search" id="search">
+            <input type="text" id="query" placeholder="search....">
+            <button></button>
+            <!-- we will add suggestions with javascript    -->
+          </form>
+          <div class="weather-icon">
+            <img src="https://i.ibb.co/rb4rrJL/26.png" alt id="icon">
+          </div>
+          <div class="temperature">
+            <h1 id="temp">43.5</h1>
+            <span class="temo-unit">°C</span>
+          </div>
+          <div class="day-time">
+            <p id="day-time"> friday, 04:54</p><br>
+            <hr><br><br>
+            <p id="condition">clear</p>
+            <p id="rain">perc-0%</p>
+          </div>
+          <div class="location-text">
+            <p id="location"></p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <nav>
+          <ul class="option">
+            <button class="hourly">Today</button>
+            <button class="weekly">Week</button>
+          </ul>
+          <ul class="options units">
+            <button class="celcius active">°C</button>
+            <button class="fahrenheit">°F</button>
+          </ul>
+        </nav>
+
+        <div class="grid-container" id="today">
+          <div class="cards" id="weather-cards">
+          </div>
+          <!-- <div class="cards" id="weather-cards">
+            <div class="card">
+              <h2 class="day-name">11:00AM</h2>
+              <div class="card-icon">
+                <img src="https://i.ibb.co/1nxNGHL/10.png" alt="ibb"
+                  width="10px">
+              </div>
+              <div class="day-temp">
+                <h2 class="temp">37.4</h2>
+                <span class="temp-unit">°F</span>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <div class="grid-container" id="week">
+          <div class="cards" id="weather-cards1">
+          </div>
+        </div>
+
+        <div class="highlights">
+          <h2 class="heading">today's highlights</h2>
+          <div class="cards">
+            <div class="card2">
+              <h4 class="card-heading">UV Index</h4>
+              <div class="content">
+                <p class="uv-index"></p>
+                <p class="uv-text">Low</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Wind Status</h4>
+              <div class="content">
+                <p class="Wind-Status"></p>
+                <p class="Wind-text">km/h</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Sunrise & Sunset</h4>
+              <div class="content">
+                <p class="sunrise">06:004 am</p>
+                <p class="sunset">05:51pm</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Humidity</h4>
+              <div class="content">
+                <p class="humidity">68.87%</p>
+                <p class="humidity-status">High</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Vislibility</h4>
+              <div class="content">
+                <p class="visibility">16.2</p>
+                <p class="visibility-status">Very clear Air</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Air Quality</h4>
+              <div class="content">
+                <p class="air-Quality">214.5</p>
+                <p class="air-Quality-status">Very Unhealty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="credits">Weather prediction App by PRAKASH CHANDRA PATRA</p>
+      </div>
+    </div>
+    <script src="../JAVASCRIPT/index.js"></script>
+  </body>
+</html>
